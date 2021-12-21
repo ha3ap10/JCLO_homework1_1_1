@@ -9,10 +9,7 @@ import ru.netology.jclo_homework1_1_1.profile.ProductionProfile;
 import ru.netology.jclo_homework1_1_1.profile.SystemProfile;
 
 @Configuration
-//@ConfigurationProperties(prefix = "netology.profile")
 public class Config {
-
-    private boolean dev;
 
     @Bean
     @ConditionalOnProperty(name = "netology.profile.dev", havingValue = "true")
